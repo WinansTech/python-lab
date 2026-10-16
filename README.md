@@ -8,11 +8,13 @@ A personal sandbox for learning, prototyping, and tinkering with Python. Nothing
 
 ## Structure
 
+```
 python-lab/
 ├── exercises/      # Small practice problems and challenges
 ├── experiments/    # Exploratory scripts and prototypes
 ├── snippets/       # Reusable bits of code
 └── notes/          # Markdown notes and write-ups
+```
 
 > Feel free to organize things however works best for you.
 
