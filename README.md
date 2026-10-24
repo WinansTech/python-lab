@@ -1,6 +1,6 @@
 # python-lab
 
-Central catchall for my Python exercises, experiments, and small projects.
+Central catch-all for my Python exercises, experiments, and small projects.
 
 ## About
 
