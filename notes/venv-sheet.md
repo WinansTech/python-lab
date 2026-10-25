@@ -25,11 +25,41 @@ ghcr.io/astral-sh/uv
 ~/Documents/Dev/Projects/python-lab/exercises$ python3 --version
 ```
 
-- Create environment;
+- UV creates and manages the .venv automatically;
 
 ```bash
-uv venv
-source .venv/bin/activate 
+# Add dependencies (creates .venv if needed)
+uv add <package>
+
+# Run things (no activation needed)
+uv run python your_script.py
+uv run pytest
+```
+
+## Project flow
+
+- Normal UV project flow (start to finish):
+
+```bash
+# 1. Create folder and initialize UV project
+mkdir my-app
+cd my-app
+uv init --bare          # creates pyproject.toml (no sample code)
+
+# 2. Add dependencies
+#    (this automatically creates .venv + uv.lock)
+uv add fastapi uvicorn
+uv add --dev pytest ruff
+
+# 3. Write your code (e.g. main.py)
+#    ...create your files...
+
+# 4. Run things (no activation needed)
+uv run python main.py
+uv run pytest
+
+# 5. (Optional) Export production requirements when you need them
+uv export --no-dev --format requirements-txt > requirements.txt
 ```
 
 ## UV Command list
