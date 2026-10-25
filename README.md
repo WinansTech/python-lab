@@ -24,6 +24,7 @@ python-lab/
 
 - Python 3.10+
 - Individual experiments may list their own dependencies
+- This project folder utilizes UV as the package management system ( see ./notes/venv-sheet.md)
 
 ## License
 
