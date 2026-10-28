@@ -1,0 +1,3 @@
+#!/usr/bin/env -S uv run --script
+
+print("Hello, world!") # this shows in the terminal when the script is run, no need to label it a .py extension.
